@@ -1,0 +1,28 @@
+main {
+    @include center;
+    max-width: 1200px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0;
+    width: 90%;
+}
+
+.gallery {
+   overflow: visible;
+   @include mq("sm") {
+       @include flexbox($wrap, $row, $just);
+       align-items: center;
+   }
+}
+
+.thumbnails {
+  margin: 2rem;
+  @include mq("xs"){
+  &,
+  & img {
+    display: block;
+    width: 80%;
+    @include center;
+  }  
+}
+}

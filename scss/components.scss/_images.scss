@@ -1,0 +1,9 @@
+.thumbnails img {
+    @include border;
+    @include shadow;
+    @include transition($cub-bez, $dur);
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}

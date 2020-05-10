@@ -1,0 +1,58 @@
+//Media queries
+@mixin mq($break) {
+    $value: map-get($brpt, $break);
+    $sm: map-get($brpt, "sm");
+
+    @if $value == null {
+        @error "'{$break} is not a valid breakpoint name.";
+    }
+    
+    @else if $value < $sm {
+        @media(max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @media(min-width: $value) {
+            @content;
+        }
+    }
+}
+
+//Transitions
+@mixin transition {
+    transiton-property: $prop;
+    transition-duration: $dur;
+    transition-timing-function: $tim;
+}
+
+// Flexbox
+@mixin flexbox(
+    $dir: null,
+    $wrap: null,
+    $just: null,
+    $disp: flex
+) {
+   flex-direction: $dir;
+   flex-wrap: $wrap;
+   justify-content: $just;
+   display: $dir; 
+}
+
+//Layout
+@mixin center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//Borders and boxes
+@mixin shadow {
+    box-shadow: 2px 2px 10px 0px rgba(0,0,102,0.2),
+    -2px 0px 10px 0px  rgba(0,0,102,0.2);
+}
+
+@mixin border {
+    border-style: $style-bd;
+    border-color: $color-bd;
+    border-radius: $radius-bd;
+}

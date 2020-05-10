@@ -3,9 +3,30 @@ $ibarra-serif:  'Ibarra Real Nova', serif;;
 
 //media queries
 $brpt: (
-    "sm":320px,
-    "med":780px,
+    "xs":320px,
+    "sm":500px,
+    "md":780px,
     "lg":1200px,
-):
+);
 
 //Colors
+$text-color: #DCDCDC;
+$color-primary: #F0FFFF;
+$color-secondary: rgb(240, 248, 255);
+
+//Transitions
+$cub-bez: cubic-bezier(.5,-0.5,5, 1.5);
+$prop: all;
+$dur: 0.25s;
+$tim: ease-in;
+
+//Flexbox
+$disp: flex;
+$wrap:wrap; 
+$row:row;
+$just:space-evenly;
+
+//Borders
+$style-bd: solid;
+$color-bd: $color-primary;
+$radius-bd: 5px;
