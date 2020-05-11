@@ -1,4 +1,4 @@
-.thumbnails img {
+.thumbnail img {
     @include border;
     @include shadow;
     @include transition($cub-bez, $dur);
