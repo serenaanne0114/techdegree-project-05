@@ -4,7 +4,7 @@
     $sm: map-get($brpt, "sm");
 
     @if $value == null {
-        @error "'{$break}' is not a valid breakpoint name.";
+        @error "'{$break}'s is not a valid breakpoint name.";
     }
     
     @else if $value < $sm {
