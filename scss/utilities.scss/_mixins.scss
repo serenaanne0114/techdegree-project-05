@@ -28,10 +28,10 @@
 
 // Flexbox
 @mixin flexbox() {
-   flex-direction: $dir;
+   flex-direction: $row;
    flex-wrap: $wrap;
    justify-content: $just;
-   display: $dir; 
+   display: $disp; 
 }
 
 //Layout
