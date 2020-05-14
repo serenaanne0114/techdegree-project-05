@@ -1,8 +1,9 @@
 //Lightbox
 
 //searchbox
-const $thumb = $(.thumbmail);
-const $search = $(#search);
+$(document).ready(function() {
+    let 
+})
 
 
 

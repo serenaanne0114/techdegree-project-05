@@ -10,7 +10,7 @@ main {
 .gallery {
    overflow: visible;
    @include mq("sm") {
-       @include flexbox($wrap, $row, $just);
+       @include flexbox();
        align-items: center;
    }
 }

@@ -1,6 +1,6 @@
 input {
     @include center;
-    @include border($color-bd);
+    @include border();
     display: block;
     font-size: 1.4rem;
     width: 90%;

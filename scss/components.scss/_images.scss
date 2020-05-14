@@ -1,7 +1,7 @@
 .thumbnail img {
     @include border;
     @include shadow;
-    @include transition($cub-bez, $dur);
+    @include transition();
     &:hover,
     &:focus {
         transform: scale(1.1);

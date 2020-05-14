@@ -20,19 +20,14 @@
 }
 
 //Transitions
-@mixin transition {
+@mixin transition() {
     transiton-property: $prop;
     transition-duration: $dur;
     transition-timing-function: $tim;
 }
 
 // Flexbox
-@mixin flexbox(
-    $dir: null,
-    $wrap: null,
-    $just: null,
-    $disp: flex
-) {
+@mixin flexbox() {
    flex-direction: $dir;
    flex-wrap: $wrap;
    justify-content: $just;
@@ -51,7 +46,7 @@
     -2px 0px 10px 0px  rgba(0,0,102,0.2);
 }
 
-@mixin border {
+@mixin border() {
     border-style: $style-bd;
     border-color: $color-bd;
     border-radius: $radius-bd;
