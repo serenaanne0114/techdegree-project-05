@@ -1,5 +1,3 @@
-
-
 //searchbox
 $(document).ready(function() {
     let images = getElementsByTagName('a');
