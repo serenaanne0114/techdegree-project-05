@@ -6,7 +6,7 @@ lightbox.option({
   'disableScrolling': true,
   'alwaysShowNavOnTouchDevices': true,
   'wrapAround':true 
-)}
+})
 
 //searchbox
 $(document).ready(function() {
