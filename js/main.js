@@ -1,5 +1,9 @@
-//lightbox 
-
+//lightbox
+lightbox.option({
+  'wrapAround': true,
+  'resizeDuration': 300,  
+  'disableScrolling': true
+})
 
 //searchbox
 $(document).ready(function() {
@@ -16,7 +20,6 @@ $(document).ready(function() {
         }
     });
 });
-
 
 
 
