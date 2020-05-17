@@ -1,9 +1,12 @@
 //lightbox
 lightbox.option({
-  'wrapAround': true,
-  'resizeDuration': 300,  
-  'disableScrolling': true
-})
+  'fadeDuration': 200,
+  'imageFadeDuration': 200,
+  'resizeDuration': 300,
+  'disableScrolling': true,
+  'alwaysShowNavOnTouchDevices': true,
+  'wrapAround':true 
+)}
 
 //searchbox
 $(document).ready(function() {
