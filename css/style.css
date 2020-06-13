@@ -38,6 +38,13 @@ main {
             margin-right: auto;
             width: 80%;
         }
+    @media(min-width: 500px) {
+        .thumbnail, 
+        .thumbnail img {
+            flex: 25%;
+            padding: 5px;
+        }
+    }
     }
 /* input */
 input {
@@ -51,6 +58,7 @@ input {
     width: 90%;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 @media(min-width: 500px) {
     input {
