@@ -79,12 +79,22 @@ main {
 }
 @media(min-width: 768px) {
     #searchbox {
-        width:calc(50% - 20px);
+        width:60%;
         font-size: 1.2rem;
+    }
+    .thumbnail, 
+    .thumbnail img {
+        float: left;
+        width:calc(50% - 20px);
+        margin-bottom: 0;
     }
 }
 @media(min-width: 1200px) {
     #searchbox {
-        width: calc(100% / 4);
+        width: 40%;
     }
+    .thumbnail, 
+    .thumbnail img {
+        width:calc(100% / 4);
+        }
 }
