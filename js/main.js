@@ -9,21 +9,19 @@ lightbox.option({
 })
 
 //searchbox
-const searchBox= $(document).ready(function () {
-    const images = document.getElementsByTagName('a');
-    $('#search').on('keyup', function () {
-        const search = $('#search').val().toLowerCase;
-        for (let i = 0; i < images.length; i++) {
-            const searchVal = images[i].getAttribute('data-title');
-            if (searchVal.toLowerCase().indexOf(search) > -1) {
-                images[i].style.display = '';
-            }
-            else {
-                images[i].style.display = 'none';
-            }
+let $thumbnail = $('.thumbnail');
+let $search = $('#searchbox');
+
+$search.on('keyup', function(){
+    
+    $thumbnail.each(function (index, thumbnail) {
+        let $caption = $(this).attr('data-title').toLowerCase();
+        let $inputUser = $search.val().toLowerCase();
+        
+        if ($caption.includes($inputUser)) {
+            $(this).show; 
+        } else {
+            $(this).hide;
         }
     });
 });
-
-
-

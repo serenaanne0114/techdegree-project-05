@@ -58,8 +58,12 @@ input {
     width: 90%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    align-items: center;
 }
+#searchbox {
+    text-align: center;
+}
+
+
 @media(min-width: 500px) {
     input {
         width: 60%;
