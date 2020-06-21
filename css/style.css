@@ -58,7 +58,7 @@ input {
     width: 90%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    text-align: center;
+    align-items: center;
 }
 @media(min-width: 500px) {
     input {
