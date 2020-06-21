@@ -79,7 +79,7 @@ main {
 }
 @media(min-width: 768px) {
     #searchbox {
-        width:calc(50% - 20px);;
+        width:calc(50% - 20px);
         font-size: 1.2rem;
     }
 }
