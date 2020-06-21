@@ -77,14 +77,14 @@ main {
         width: 80%;
     }
 }
-@media(min-width: 780px) {
+@media(min-width: 768px) {
     #searchbox {
-        width: 50%;
+        width:c alc(50% - 20px);;
         font-size: 1.2rem;
     }
 }
 @media(min-width: 1200px) {
     #searchbox {
-        width: 40%;
+        width: calc(33.333% - 20px);
     }
 }
