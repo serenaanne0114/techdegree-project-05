@@ -30,22 +30,17 @@ main {
 .thumbnail {
   margin: 2em;  
 }
-    @media(min-width: 320px) {
-        .thumbnail,
+    
+    @media(min-width: 500px) {
+        .thumbnail, 
         .thumbnail img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
         }
-    @media(min-width: 500px) {
-        .thumbnail, 
-        .thumbnail img {
-            flex: 25%;
-            padding: 5px;
-        }
     }
-    }
+    
 /* input */
 input {
     margin-left: auto;
@@ -59,6 +54,7 @@ input {
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
+
 #searchbox {
     text-align: center;
 }
