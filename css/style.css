@@ -64,6 +64,9 @@ input {
     input {
         width: 60%;
     }
+    #searchbox {
+        text-align: center;
+    }
 }
 @media(min-width: 780px) {
     input {
