@@ -79,12 +79,12 @@ main {
 }
 @media(min-width: 768px) {
     #searchbox {
-        width:c alc(50% - 20px);;
+        width:calc(50% - 20px);;
         font-size: 1.2rem;
     }
 }
 @media(min-width: 1200px) {
     #searchbox {
-        width: calc(33.333% - 20px);
+        width: calc(100% / 4);
     }
 }
