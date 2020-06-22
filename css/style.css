@@ -91,8 +91,10 @@ main {
     #searchbox {
         width: 40%;
     }
-    .thumbnail, 
-    .thumbnail img {
+    .thumbnail {
         width: calc(100% / 4);
         }
+    .thumbnail.img {
+        width: 100%;
+    }
 }
