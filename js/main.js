@@ -9,19 +9,22 @@ lightbox.option({
 })
 
 //searchbox
-let $thumbnail = $('.thumbnail');
-let $search = $('#searchbox');
+const thumbnail = document.querySelectorAll('.thumbnail');
+const search = document.querySelector('#search');
 
-$search.on('keyup', function(){
-    
-    $thumbnail.each(function (index, thumbnail) {
-        let $caption = $(this).attr('data-title').toLowerCase();
-        let $inputUser = $search.val().toLowerCase();
-        
-        if ($caption.includes($inputUser)) {
-            $(this).show; 
-        } else {
-            $(this).hide;
-        }
-    });
+const searchHandle = event => {
+    const searchTerm = event.getAttribute("data-title").toLowerCase();
+}
+
+thumbnail.forEach(boxText => {
+    const text = boxText.textContent.toLowerCase();
+    const box = boxText.parentElement;
+
+    if (text.indexOf(searchTerm) > -1) {
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
 });
+
+search.addEventListener('keyup', searchHandle);
