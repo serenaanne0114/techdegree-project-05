@@ -21,7 +21,7 @@ thumbnail.forEach(boxText => {
     const box = boxText.parentElement;
 
     if (text.indexOf(searchTerm) > -1) {
-        box.style.display = "block";
+        box.style.display = "";
     } else {
         box.style.display = "none";
     }
