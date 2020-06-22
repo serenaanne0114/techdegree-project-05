@@ -27,4 +27,4 @@ thumbnail.forEach(boxText => {
     }
 });
 
-search.addEventListener('keyup', searchHandle);
+search.addEventListener('keyup', handleSearch);
