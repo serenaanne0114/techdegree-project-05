@@ -84,7 +84,7 @@ main {
     }
     .thumbnail, 
     .thumbnail img {
-        width:calc(50% / 3);
+        width:calc(50% - 30px);
         margin-bottom: 0;
     }
 }
