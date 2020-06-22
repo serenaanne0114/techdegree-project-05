@@ -13,7 +13,7 @@ const thumbnail = document.querySelectorAll('.thumbnail');
 const search = document.querySelector('#search');
 
 const searchHandle = event => {
-    const searchTerm = event.getAttribute("data-title").toLowerCase();
+    const searchTerm = event.target.value.toLowerCase();
 }
 
 thumbnail.forEach(boxText => {
