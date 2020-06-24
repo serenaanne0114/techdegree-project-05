@@ -87,7 +87,7 @@ main {
         margin-bottom: 0;
     }
 }
-@media(min-width: 1200px) {
+@media(min-width: 1024px) {
     #searchbox {
         width: 40%;
     }
