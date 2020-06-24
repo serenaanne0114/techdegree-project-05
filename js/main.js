@@ -9,7 +9,7 @@ lightbox.option({
 })
 
 //searchbox
-const data [];
+const data = [];
 
 const gal_links = document.querySelectorAll('.gallery a');
 gal_links.forEach((link) => {
