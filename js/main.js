@@ -23,7 +23,7 @@ const search = document.querySelector('#searchbox');
 const handleSearch = () => {
     let val = searchbox.value.toLowerCase;
 
-    for(let i=0; i < data.length; i++) {
+    for(let i = 0; i < data.length; i++) {
         if (data[i].includes(val)){
             gal_links[i].style.display = 'block';
         } else {
@@ -31,3 +31,5 @@ const handleSearch = () => {
         }
     }
 }
+
+search.addEventListener('keyup', handleSearch);
