@@ -9,22 +9,25 @@ lightbox.option({
 })
 
 //searchbox
-const thumbnail = document.querySelectorAll('.thumbnail');
-const search = document.querySelector('#search');
+const data [];
 
-const searchHandle = event => {
-    const searchTerm = event.target.value.toLowerCase();
-}
-
-thumbnail.forEach(boxText => {
-    const text = boxText.textContent.toLowerCase();
-    const box = boxText.parentElement;
-
-    if (text.indexOf(searchTerm) > -1) {
-        box.style.display = "";
-    } else {
-        box.style.display = "none";
-    }
+const gal_links = document.querySelectorAll('.gallery a');
+gal_links.forEach((link) => {
+    let cap = link.getAttribute('data-title');
+    data.push(cap);
 });
 
-search.addEventListener('keyup', handleSearch);
+const thumbnail = document.querySelectorAll('.thumbnail');
+const search = document.querySelector('#searchbox');
+
+const handleSearch = () => {
+    let val = searchbox.value.toLowerCase;
+
+    for(let i=0; i < data.length; i++) {
+        if (data[i].includes(val)){
+            gal_links[i].style.display = 'block';
+        } else {
+            gal_links[i].style.display = 'none';
+        }
+    }
+}
