@@ -21,7 +21,7 @@ const thumbnail = document.querySelectorAll('.thumbnail');
 const search = document.querySelector('#searchbox');
 
 const handleSearch = () => {
-    let val = searchbox.value.toLowerCase;
+    let val = searchbox.value.toLowerCase();
 
     for(let i = 0; i < data.length; i++) {
         if (data[i].includes(val)){
